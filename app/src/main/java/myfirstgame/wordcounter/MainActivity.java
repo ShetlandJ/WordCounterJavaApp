@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.Map;
+import java.util.TreeMap;
+
 import myfirstgame.wordcounter.R;
 import myfirstgame.wordcounter.WordCounter;
 
@@ -30,11 +33,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onCountButtonClicked(View button){
+
         String questionInput = textInput.getText().toString();
 
         Log.d(getClass().toString(), questionInput);
 
-        answerView.setText(wc.countWordsUsingMap(questionInput));
+        answerView.setText(wc.returnResult(wc.countWordsUsingMap(questionInput)));
 
     }
 
