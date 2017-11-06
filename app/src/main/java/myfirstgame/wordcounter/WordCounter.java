@@ -35,10 +35,10 @@ public class WordCounter {
         Map<String, Integer> wordCount = new HashMap<>();
         for (String word : splitStr) {
             if (wordCount.containsKey(word)) {
-                // Map already contains the word key. Just increment it's count by 1
+
                 wordCount.put(word, wordCount.get(word) + 1);
             } else {
-                // Map doesn't have mapping for word. Add one with count = 1
+
                 wordCount.put(word, 1);
             }
         }

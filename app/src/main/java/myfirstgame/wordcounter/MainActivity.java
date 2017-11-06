@@ -31,9 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void onCountButtonClicked(View button){
         String questionInput = textInput.getText().toString();
+
         Log.d(getClass().toString(), questionInput);
 
-        answerView.setText((wc.countWordsUsingMap(questionInput)));
+        answerView.setText(wc.countWordsUsingMap(questionInput));
 
     }
 
