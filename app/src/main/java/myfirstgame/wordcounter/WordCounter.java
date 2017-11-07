@@ -72,7 +72,7 @@ public class WordCounter {
     }
 
     public String returnResult(Map<String, Integer> result){
-        return mapTree(result).toString();
+        return mapTree(result).toString().replace("[","").replace("]","").trim();
     }
 
 }
