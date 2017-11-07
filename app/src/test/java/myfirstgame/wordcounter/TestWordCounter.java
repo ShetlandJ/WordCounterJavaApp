@@ -25,7 +25,7 @@ public class TestWordCounter {
 
     @Test
     public void canReturnCounterAsString() {
-        assertEquals("{sentence=1, a=2, that=1, recurring=1, This=1, is=1, has=1, word=1}", wc.countWordsUsingMap("This is a sentence that has a recurring word"));
+        assertEquals("a=2, this=1, has=1, is=1, recurring=1, sentence=1, that=1, word=1", wc.returnResult(wc.countWordsUsingMap("This is a sentence that has a recurring word")));
     }
 
 }
